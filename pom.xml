@@ -22,9 +22,9 @@
         <version.fabric8>3.5.28</version.fabric8>
         <version.keycloak>2.5.5.Final</version.keycloak>
 
-        <windup.web.scm.connection>scm:git:https://github.com/windup/windup-openshift.git</windup.web.scm.connection>
-        <windup.web.developer.connection>scm:git:git@github.com:windup/windup-openshift.git</windup.web.developer.connection>
-        <windup.web.scm.url>http://github.com/windup/windup-openshift</windup.web.scm.url>
+        <windup.web.scm.connection>scm:git:https://github.com/mrizzi/windup-openshift.git</windup.web.scm.connection>
+        <windup.web.developer.connection>scm:git:git@github.com:mrizzi/windup-openshift.git</windup.web.developer.connection>
+        <windup.web.scm.url>http://github.com/mrizzi/windup-openshift</windup.web.scm.url>
     </properties>
 
     <scm>
@@ -53,12 +53,20 @@
 
     <distributionManagement>
         <snapshotRepository>
+            <id>myoss</id>
+            <url>http://79.45.177.216:8007/repository/maven-snapshots/</url>
+<!--
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+-->
         </snapshotRepository>
         <repository>
+            <id>myoss</id>
+            <url>http://79.45.177.216:8007/repository/maven-releases/</url>
+<!--
             <id>ossrh</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+-->
         </repository>
     </distributionManagement>
     
